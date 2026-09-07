@@ -29,10 +29,19 @@
     padding: 2rem;
   }
   h1 {
-    margin: 0 0 0.75rem;
+    margin: 0 0 1.25rem;
     font-size: clamp(2rem, 6vw, 3.25rem);
     font-weight: 600;
     letter-spacing: 0.04em;
+  }
+  .headshot {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border-radius: 0;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    box-shadow: 0 2px 10px rgba(1, 33, 105, 0.18);
   }
   .rule {
     width: 48px;
@@ -48,6 +57,10 @@
     color: var(--graphite);
     letter-spacing: 0.02em;
   }
+  .contact {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+  }
   footer {
     position: fixed;
     bottom: 1.5rem;
@@ -62,8 +75,10 @@
 <body>
   <main>
     <h1>TOM GODIN</h1>
+    <img class="headshot" src="headshot.jpg" alt="Tom Godin">
     <div class="rule"></div>
     <p>Coming soon.</p>
+    <p class="contact">tom@tomgodin.com</p>
   </main>
 </body>
 </html>
